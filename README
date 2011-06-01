@@ -1,0 +1,25 @@
+NAME
+    Dist::Zilla::Plugin::Test::Version - release Test::Version tests
+
+VERSION
+    version 0.1.1
+
+  SYNOPSIS
+    in "dist.ini"
+
+            [Test::Version]
+
+  DESCRIPTION
+    This module will add a Test::Version test as a release test to your
+    module.
+
+AUTHOR
+    Caleb Cushing <xenoterracide@gmail.com>
+
+COPYRIGHT AND LICENSE
+    This software is Copyright (c) 2011 by Caleb Cushing.
+
+    This is free software, licensed under:
+
+      The Artistic License 2.0 (GPL Compatible)
+
