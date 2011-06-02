@@ -3,7 +3,7 @@ use 5.006;
 use strict;
 use warnings;
 BEGIN {
-	our $VERSION = '0.1.1'; # VERSION
+	our $VERSION = '0.1.2'; # VERSION
 }
 use Moose;
 extends 'Dist::Zilla::Plugin::InlineFiles';
@@ -24,7 +24,7 @@ Dist::Zilla::Plugin::Test::Version - release Test::Version tests
 
 =head1 VERSION
 
-version 0.1.1
+version 0.1.2
 
 =head2 SYNOPSIS
 
@@ -59,8 +59,8 @@ use strict;
 use warnings;
 use Test::More;
 
-eval "use Test::Version";
-plan skip_all => "Test::Version required for testing versions"
+eval "use Test::Version 0.04";
+plan skip_all => "Test::Version 0.04 required for testing versions"
     if $@;
 
 version_all_ok();
