@@ -2,36 +2,39 @@
 use strict;
 use warnings;
 
-BEGIN { require 5.006; }
+use 5.006;
 
 use ExtUtils::MakeMaker 6.30;
 
 
 
 my %WriteMakefileArgs = (
-  'ABSTRACT' => 'release Test::Version tests',
-  'AUTHOR' => 'Caleb Cushing <xenoterracide@gmail.com>',
-  'BUILD_REQUIRES' => {
-    'English' => '0',
-    'File::Find' => '0',
-    'File::Temp' => '0',
-    'Test::More' => '0'
+  "ABSTRACT" => "release Test::Version tests",
+  "AUTHOR" => "Caleb Cushing <xenoterracide\@gmail.com>",
+  "BUILD_REQUIRES" => {
+    "English" => 0,
+    "File::Find" => 0,
+    "File::Temp" => 0,
+    "Test::More" => "0.88",
+    "Test::Requires" => 0
   },
-  'CONFIGURE_REQUIRES' => {
-    'ExtUtils::MakeMaker' => '6.30'
+  "CONFIGURE_REQUIRES" => {
+    "ExtUtils::MakeMaker" => "6.30"
   },
-  'DISTNAME' => 'Dist-Zilla-Plugin-Test-Version',
-  'EXE_FILES' => [],
-  'LICENSE' => 'artistic_2',
-  'NAME' => 'Dist::Zilla::Plugin::Test::Version',
-  'PREREQ_PM' => {
-    'Dist::Zilla::Plugin::InlineFiles' => '0',
-    'Moose' => '0',
-    'Test::Version' => '0.04'
+  "DISTNAME" => "Dist-Zilla-Plugin-Test-Version",
+  "EXE_FILES" => [],
+  "LICENSE" => "artistic_2",
+  "NAME" => "Dist::Zilla::Plugin::Test::Version",
+  "PREREQ_PM" => {
+    "Dist::Zilla::Plugin::InlineFiles" => 0,
+    "Moose" => 0,
+    "Test::Version" => "0.04",
+    "strict" => 0,
+    "warnings" => 0
   },
-  'VERSION' => '0.1.2',
-  'test' => {
-    'TESTS' => 't/*.t'
+  "VERSION" => "0.001004",
+  "test" => {
+    "TESTS" => "t/*.t"
   }
 );
 

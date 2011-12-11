@@ -2,7 +2,7 @@ NAME
     Dist::Zilla::Plugin::Test::Version - release Test::Version tests
 
 VERSION
-    version 0.1.2
+    version 0.001004
 
   SYNOPSIS
     in "dist.ini"
@@ -12,6 +12,13 @@ VERSION
   DESCRIPTION
     This module will add a Test::Version test as a release test to your
     module.
+
+BUGS
+    Please report any bugs or feature requests on the bugtracker website
+    https://github.com/xenoterracide/Dist-Zilla-Plugin-Test-Version/issues
+
+    When submitting a bug or request, please include a test-file or a patch
+    to an existing test-file that illustrates the bug or desired feature.
 
 AUTHOR
     Caleb Cushing <xenoterracide@gmail.com>

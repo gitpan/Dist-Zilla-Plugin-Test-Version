@@ -3,7 +3,7 @@ use 5.006;
 use strict;
 use warnings;
 BEGIN {
-	our $VERSION = '0.1.2'; # VERSION
+	our $VERSION = '0.001004'; # VERSION
 }
 use Moose;
 extends 'Dist::Zilla::Plugin::InlineFiles';
@@ -24,7 +24,7 @@ Dist::Zilla::Plugin::Test::Version - release Test::Version tests
 
 =head1 VERSION
 
-version 0.1.2
+version 0.001004
 
 =head2 SYNOPSIS
 
@@ -35,6 +35,15 @@ in C<dist.ini>
 =head2 DESCRIPTION
 
 This module will add a L<Test::Version> test as a release test to your module.
+
+=head1 BUGS
+
+Please report any bugs or feature requests on the bugtracker website
+https://github.com/xenoterracide/Dist-Zilla-Plugin-Test-Version/issues
+
+When submitting a bug or request, please include a test-file or a
+patch to an existing test-file that illustrates the bug or desired
+feature.
 
 =head1 AUTHOR
 
@@ -59,9 +68,9 @@ use strict;
 use warnings;
 use Test::More;
 
-eval "use Test::Version 0.04";
-plan skip_all => "Test::Version 0.04 required for testing versions"
-    if $@;
+use Test::Requires {
+    'Test::Version' => 0.04,
+};
 
-version_all_ok();
+version_all_ok;
 done_testing;
