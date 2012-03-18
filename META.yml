@@ -6,12 +6,14 @@ build_requires:
   English: 0
   File::Find: 0
   File::Temp: 0
+  Test::DZil: 0
   Test::More: 0.88
   Test::Requires: 0
+  Test::Script: 1.05
 configure_requires:
   ExtUtils::MakeMaker: 6.30
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.300003, CPAN::Meta::Converter version 2.112621'
+generated_by: 'Dist::Zilla version 4.300010, CPAN::Meta::Converter version 2.120630'
 license: artistic_2
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -22,12 +24,15 @@ no_index:
     - perlcritic.rc
 requires:
   Dist::Zilla::Plugin::InlineFiles: 0
+  Dist::Zilla::Role::TextTemplate: 0
   Moose: 0
-  Test::Version: 0.04
+  Test::Version: 1
+  namespace::autoclean: 0
   perl: 5.006
   strict: 0
   warnings: 0
 resources:
   bugtracker: https://github.com/xenoterracide/Dist-Zilla-Plugin-Test-Version/issues
+  homepage: http://search.cpan.org/dist/Dist-Zilla-Plugin-Test-Version/
   repository: git://github.com/xenoterracide/Dist-Zilla-Plugin-Test-Version.git
-version: 0.001004
+version: 0.002000

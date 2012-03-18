@@ -49,14 +49,18 @@ sub pmver {
 }
 
 eval { $v .= pmver('Dist::Zilla::Plugin::InlineFiles','any version') };
+eval { $v .= pmver('Dist::Zilla::Role::TextTemplate','any version') };
 eval { $v .= pmver('English','any version') };
 eval { $v .= pmver('ExtUtils::MakeMaker','6.30') };
 eval { $v .= pmver('File::Find','any version') };
 eval { $v .= pmver('File::Temp','any version') };
 eval { $v .= pmver('Moose','any version') };
+eval { $v .= pmver('Test::DZil','any version') };
 eval { $v .= pmver('Test::More','0.88') };
 eval { $v .= pmver('Test::Requires','any version') };
-eval { $v .= pmver('Test::Version','0.04') };
+eval { $v .= pmver('Test::Script','1.05') };
+eval { $v .= pmver('Test::Version','1') };
+eval { $v .= pmver('namespace::autoclean','any version') };
 eval { $v .= pmver('strict','any version') };
 eval { $v .= pmver('warnings','any version') };
 

@@ -2,16 +2,25 @@ NAME
     Dist::Zilla::Plugin::Test::Version - release Test::Version tests
 
 VERSION
-    version 0.001004
+    version 0.002000
 
-  SYNOPSIS
+SYNOPSIS
     in "dist.ini"
 
             [Test::Version]
+            is_strict   = 0
+            has_version = 1
 
-  DESCRIPTION
+DESCRIPTION
     This module will add a Test::Version test as a release test to your
     module.
+
+ATTRIBUTES
+  is_strict
+    set Test::Version is_strict
+
+  has_version
+    set Test::Version has_version
 
 BUGS
     Please report any bugs or feature requests on the bugtracker website
@@ -24,7 +33,7 @@ AUTHOR
     Caleb Cushing <xenoterracide@gmail.com>
 
 COPYRIGHT AND LICENSE
-    This software is Copyright (c) 2011 by Caleb Cushing.
+    This software is Copyright (c) 2012 by Caleb Cushing.
 
     This is free software, licensed under:
 
