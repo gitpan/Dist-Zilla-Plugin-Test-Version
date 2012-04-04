@@ -17,7 +17,6 @@ my %WriteMakefileArgs = (
     "File::Temp" => 0,
     "Test::DZil" => 0,
     "Test::More" => "0.88",
-    "Test::Requires" => 0,
     "Test::Script" => "1.05"
   },
   "CONFIGURE_REQUIRES" => {
@@ -36,7 +35,7 @@ my %WriteMakefileArgs = (
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "0.002002",
+  "VERSION" => "0.002003",
   "test" => {
     "TESTS" => "t/*.t"
   }

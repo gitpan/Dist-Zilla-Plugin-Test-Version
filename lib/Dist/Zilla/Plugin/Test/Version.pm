@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use namespace::autoclean;
 
-our $VERSION = '0.002002'; # VERSION
+our $VERSION = '0.002003'; # VERSION
 
 use Moose;
 extends 'Dist::Zilla::Plugin::InlineFiles';
@@ -20,8 +20,7 @@ around add_file => sub {
 				$file->content,
 				{
 					name        => __PACKAGE__,
-					version     =>
-						$Dist::Zilla::Plugin::Test::Version::VERSION
+					version     => __PACKAGE__->VERSION
 						|| 'bootstrapped version'
 						,
 					is_strict   => \$self->is_strict,
@@ -62,7 +61,7 @@ Dist::Zilla::Plugin::Test::Version - release Test::Version tests
 
 =head1 VERSION
 
-version 0.002002
+version 0.002003
 
 =head1 SYNOPSIS
 
