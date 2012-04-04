@@ -7,15 +7,13 @@ BEGIN {
   }
 }
 
-use 5.006;
 use strict;
 use warnings;
 use Test::More;
 
-use Test::Requires {
-    'Test::Version' => 1,
-    'version'       => 0.86,
-};
+BEGIN {
+	eval "use Test::Version; 1;" or die "$@_";
+}
 
 my @imports = ( 'version_all_ok' );
 

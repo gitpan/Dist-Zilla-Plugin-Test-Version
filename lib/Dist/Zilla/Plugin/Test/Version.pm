@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use namespace::autoclean;
 
-our $VERSION = '0.002000'; # VERSION
+our $VERSION = '0.002001'; # VERSION
 
 use Moose;
 extends 'Dist::Zilla::Plugin::InlineFiles';
@@ -57,7 +57,7 @@ Dist::Zilla::Plugin::Test::Version - release Test::Version tests
 
 =head1 VERSION
 
-version 0.002000
+version 0.002001
 
 =head1 SYNOPSIS
 
@@ -108,15 +108,13 @@ This is free software, licensed under:
 __DATA__
 __[ xt/release/test-version.t ]__
 #!/usr/bin/perl
-use 5.006;
 use strict;
 use warnings;
 use Test::More;
 
-use Test::Requires {
-    'Test::Version' => 1,
-    'version'       => 0.86,
-};
+BEGIN {
+	eval "use Test::Version; 1;" or die "$@_";
+}
 
 my @imports = ( 'version_all_ok' );
 

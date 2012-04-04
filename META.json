@@ -4,7 +4,7 @@
       "Caleb Cushing <xenoterracide@gmail.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300010, CPAN::Meta::Converter version 2.120630",
+   "generated_by" : "Dist::Zilla version 4.300013, CPAN::Meta::Converter version 2.120921",
    "license" : [
       "artistic_2"
    ],
@@ -60,6 +60,6 @@
          "web" : "https://github.com/xenoterracide/Dist-Zilla-Plugin-Test-Version"
       }
    },
-   "version" : "0.002000"
+   "version" : "0.002001"
 }
 
