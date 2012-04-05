@@ -43,6 +43,7 @@
             "File::Temp" : "0",
             "Test::DZil" : "0",
             "Test::More" : "0.88",
+            "Test::NoTabs" : "0",
             "Test::Script" : "1.05"
          }
       }
@@ -59,6 +60,6 @@
          "web" : "https://github.com/xenoterracide/Dist-Zilla-Plugin-Test-Version"
       }
    },
-   "version" : "0.002003"
+   "version" : "0.002004"
 }
 

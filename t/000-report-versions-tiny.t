@@ -57,6 +57,7 @@ eval { $v .= pmver('File::Temp','any version') };
 eval { $v .= pmver('Moose','any version') };
 eval { $v .= pmver('Test::DZil','any version') };
 eval { $v .= pmver('Test::More','0.88') };
+eval { $v .= pmver('Test::NoTabs','any version') };
 eval { $v .= pmver('Test::Script','1.05') };
 eval { $v .= pmver('Test::Version','1') };
 eval { $v .= pmver('namespace::autoclean','any version') };
