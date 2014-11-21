@@ -41,6 +41,7 @@
             "Dist::Zilla::Role::PrereqSource" : "0",
             "Dist::Zilla::Role::TextTemplate" : "0",
             "Moose" : "0",
+            "Test::Version" : "1",
             "namespace::autoclean" : "0",
             "perl" : "5.006",
             "strict" : "0",
@@ -59,14 +60,15 @@
             "Test::DZil" : "0",
             "Test::More" : "0",
             "Test::NoTabs" : "0",
-            "Test::Script" : "1.05"
+            "Test::Script" : "1.05",
+            "Test::Version" : "1"
          }
       }
    },
    "provides" : {
       "Dist::Zilla::Plugin::Test::Version" : {
          "file" : "lib/Dist/Zilla/Plugin/Test/Version.pm",
-         "version" : "0.003000"
+         "version" : "0.003001"
       }
    },
    "release_status" : "stable",
@@ -81,7 +83,7 @@
          "web" : "https://github.com/xenoterracide/dist-zilla-plugin-test-version"
       }
    },
-   "version" : "0.003000",
+   "version" : "0.003001",
    "x_contributors" : [
       "Karen Etheridge <ether@cpan.org>",
       "Mike Doherty <doherty@cs.dal.ca>"

@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use namespace::autoclean;
 
-our $VERSION = '0.003000'; # VERSION
+our $VERSION = '0.003001'; # VERSION
 
 use Moose;
 extends 'Dist::Zilla::Plugin::InlineFiles';
@@ -73,7 +73,7 @@ Dist::Zilla::Plugin::Test::Version - release Test::Version tests
 
 =head1 VERSION
 
-version 0.003000
+version 0.003001
 
 =head1 SYNOPSIS
 

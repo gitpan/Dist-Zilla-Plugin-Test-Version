@@ -11,6 +11,7 @@ build_requires:
   Test::More: '0'
   Test::NoTabs: '0'
   Test::Script: '1.05'
+  Test::Version: '1'
 configure_requires:
   ExtUtils::MakeMaker: '0'
 dynamic_config: 0
@@ -26,12 +27,13 @@ no_index:
 provides:
   Dist::Zilla::Plugin::Test::Version:
     file: lib/Dist/Zilla/Plugin/Test/Version.pm
-    version: '0.003000'
+    version: '0.003001'
 requires:
   Dist::Zilla::Plugin::InlineFiles: '0'
   Dist::Zilla::Role::PrereqSource: '0'
   Dist::Zilla::Role::TextTemplate: '0'
   Moose: '0'
+  Test::Version: '1'
   namespace::autoclean: '0'
   perl: '5.006'
   strict: '0'
@@ -40,7 +42,7 @@ resources:
   bugtracker: https://github.com/xenoterracide/dist-zilla-plugin-test-version/issues
   homepage: https://metacpan.org/dist/Dist-Zilla-Plugin-Test-Version
   repository: git://github.com/xenoterracide/dist-zilla-plugin-test-version.git
-version: '0.003000'
+version: '0.003001'
 x_contributors:
   - 'Karen Etheridge <ether@cpan.org>'
   - 'Mike Doherty <doherty@cs.dal.ca>'
