@@ -2,7 +2,7 @@ NAME
     Dist::Zilla::Plugin::Test::Version - release Test::Version tests
 
 VERSION
-    version 0.002004
+    version 0.003000
 
 SYNOPSIS
     in "dist.ini"
@@ -22,9 +22,13 @@ ATTRIBUTES
   has_version
     set Test::Version has_version
 
+METHODS
+  register_prereqs
+    Register Test::Version as an a development prerequisite.
+
 BUGS
     Please report any bugs or feature requests on the bugtracker website
-    https://github.com/xenoterracide/Dist-Zilla-Plugin-Test-Version/issues
+    https://github.com/xenoterracide/dist-zilla-plugin-test-version/issues
 
     When submitting a bug or request, please include a test-file or a patch
     to an existing test-file that illustrates the bug or desired feature.
@@ -33,7 +37,8 @@ AUTHOR
     Caleb Cushing <xenoterracide@gmail.com>
 
 COPYRIGHT AND LICENSE
-    This software is Copyright (c) 2012 by Caleb Cushing.
+    This software is Copyright (c) 2014 by Caleb Cushing
+    <xenoterracide@gmail.com>.
 
     This is free software, licensed under:
 

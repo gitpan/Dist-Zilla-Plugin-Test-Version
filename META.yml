@@ -3,36 +3,44 @@ abstract: 'release Test::Version tests'
 author:
   - 'Caleb Cushing <xenoterracide@gmail.com>'
 build_requires:
-  English: 0
-  File::Find: 0
-  File::Temp: 0
-  Test::DZil: 0
-  Test::More: 0.88
-  Test::NoTabs: 0
-  Test::Script: 1.05
+  ExtUtils::MakeMaker: '0'
+  File::Spec: '0'
+  IO::Handle: '0'
+  IPC::Open3: '0'
+  Test::DZil: '0'
+  Test::More: '0'
+  Test::NoTabs: '0'
+  Test::Script: '1.05'
 configure_requires:
-  ExtUtils::MakeMaker: 6.30
+  ExtUtils::MakeMaker: '0'
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.300013, CPAN::Meta::Converter version 2.120921'
+generated_by: 'Dist::Zilla version 5.025, CPAN::Meta::Converter version 2.142690'
 license: artistic_2
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
-  version: 1.4
+  version: '1.4'
 name: Dist-Zilla-Plugin-Test-Version
 no_index:
   file:
     - perlcritic.rc
+provides:
+  Dist::Zilla::Plugin::Test::Version:
+    file: lib/Dist/Zilla/Plugin/Test/Version.pm
+    version: '0.003000'
 requires:
-  Dist::Zilla::Plugin::InlineFiles: 0
-  Dist::Zilla::Role::TextTemplate: 0
-  Moose: 0
-  Test::Version: 1
-  namespace::autoclean: 0
-  perl: 5.006
-  strict: 0
-  warnings: 0
+  Dist::Zilla::Plugin::InlineFiles: '0'
+  Dist::Zilla::Role::PrereqSource: '0'
+  Dist::Zilla::Role::TextTemplate: '0'
+  Moose: '0'
+  namespace::autoclean: '0'
+  perl: '5.006'
+  strict: '0'
+  warnings: '0'
 resources:
-  bugtracker: https://github.com/xenoterracide/Dist-Zilla-Plugin-Test-Version/issues
-  homepage: http://search.cpan.org/dist/Dist-Zilla-Plugin-Test-Version/
-  repository: git://github.com/xenoterracide/Dist-Zilla-Plugin-Test-Version.git
-version: 0.002004
+  bugtracker: https://github.com/xenoterracide/dist-zilla-plugin-test-version/issues
+  homepage: https://metacpan.org/dist/Dist-Zilla-Plugin-Test-Version
+  repository: git://github.com/xenoterracide/dist-zilla-plugin-test-version.git
+version: '0.003000'
+x_contributors:
+  - 'Karen Etheridge <ether@cpan.org>'
+  - 'Mike Doherty <doherty@cs.dal.ca>'
